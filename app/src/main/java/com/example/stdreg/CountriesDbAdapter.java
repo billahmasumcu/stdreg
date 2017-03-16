@@ -135,7 +135,7 @@ import android.widget.Toast;
 		  }
 	 }
 	 
-	 public int studentRegistration(String name,  
+	 public int studentRegistration(String stdID, String name,
 	   String xclass, String xsection, String ph, String mail) {
 		 //String myallrows = null;
 		   int myallrows=0;
@@ -172,7 +172,8 @@ import android.widget.Toast;
 		 }else {
 			 f_getid=String.valueOf(getid);
 		}
-		 String newid=formattedDate+xclass+xsection+f_getid;
+		 		 //String newid=formattedDate+xclass+xsection+f_getid;
+				 		 String newid = stdID;
 	  
 		  try{
 		        Cursor checkID = mDb.rawQuery("SELECT * FROM " + SQLITE_TABLE+" WHERE "+KEY_STD_id+"='"+newid+"'", null);  
@@ -393,7 +394,7 @@ import android.widget.Toast;
 		 mDb = mDbHelper.getWritableDatabase();
 		 try{
 		  mCursor = mDb.query(SQLITE_TABLE, new String[] {KEY_ROWID,
-		    KEY_NAME, KEY_STD_id, KEY_MAIL, KEY_PHONE}, 
+		    KEY_NAME, KEY_STD_id, KEY_MAIL, KEY_PHONE},
 		    KEY_CLASS+"='"+x+"' AND "+KEY_SECTION+"='"+y+"'", null, null, null, null);
 		 }catch(Exception e){
 			 e.printStackTrace();

@@ -183,13 +183,13 @@
 
     </LinearLayout>
 
-		
- 
-	    <Button
-	        android:id="@+id/btnSave"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_weight="1"
-	        android:background="@null"
-	        android:enabled="false"/>
+
+	<Button
+		android:id="@+id/btnSave"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:background="@null"
+		android:enabled="false"
+		android:text="Save" />
 </LinearLayout>

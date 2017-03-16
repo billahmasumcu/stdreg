@@ -26,6 +26,7 @@ public class MainActivity1 extends Activity {
 	Spinner s2;
 	EditText f;
 	EditText g;
+	EditText studentIDField;
 	Button save;
 	private CountriesDbAdapter dbHelper;
 	private String DATABASE_NAME = "eduInstitute_Menegment";
@@ -45,6 +46,7 @@ public class MainActivity1 extends Activity {
 		a=(EditText)findViewById(R.id.txt_std_name);
         f=(EditText)findViewById(R.id.txt_id);
         g=(EditText)findViewById(R.id.txt_mail);
+		studentIDField = (EditText)findViewById(R.id.txt_id);
         dbHelper = new CountriesDbAdapter(this);
         
         dbHelper.open();
@@ -91,6 +93,7 @@ public class MainActivity1 extends Activity {
 			@Override
 			public void onClick(View v) {
 				String name=a.getText().toString();
+				String stdID = studentIDField.getText().toString();
 				String stdclass=s1.getSelectedItem().toString();
 				String stdSection=s2.getSelectedItem().toString();
 				String stdid=f.getText().toString();
@@ -110,8 +113,8 @@ public class MainActivity1 extends Activity {
 				}else{
 					dbHelper.open();
 					// TODO Auto-generated method stub
-					int RES = dbHelper.studentRegistration(name,stdclass,stdSection,stdid,stdmail);
-
+					int RES = dbHelper.studentRegistration(stdID, name,stdclass,stdSection,stdid,stdmail);
+					//int RES = dbHelper.studentRegistration(stdID, name,stdclass,stdSection,stdph,stdmail);
 					if(RES==4){
 						
 						Toast.makeText(MainActivity1.this, "Inserted successfully", Toast.LENGTH_LONG).show();
