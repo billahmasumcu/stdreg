@@ -1,0 +1,56 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+		<TableRow
+		        android:background="#CCC"
+		        android:paddingTop="1dp"
+		        android:paddingRight="1dp"
+		        android:layout_weight="1"
+		        android:weightSum="4">
+		      
+		       	<TextView
+			        android:id="@+id/std_name"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="TextView" 
+			        android:layout_weight="1.5"
+			        android:textColor="#000000"
+			        android:layout_marginLeft="1dp"
+		            android:padding="5dp"
+		            android:background="#FFF"
+		            android:gravity="center"/>
+ 			
+			     <TextView
+			        android:id="@+id/std_id"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="TextView" 
+			        android:layout_weight="0.5"
+			        android:layout_marginLeft="1dp"
+		            android:padding="5dp"
+		            android:background="#FFF"
+		            android:gravity="center"/>
+			
+			 	<TextView
+			        android:id="@+id/dept"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="TextView" 
+			        android:layout_weight="1"
+			        android:layout_marginLeft="1dp"
+		            android:padding="5dp"
+		            android:background="#FFF"
+		            android:gravity="center"/>
+	 		
+			    <TextView
+			        android:id="@+id/ph"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="TextView" 
+			        android:layout_weight="1"
+			        android:layout_marginLeft="1dp"
+		            android:padding="5dp"
+		            android:background="#FFF"
+		            android:gravity="center"/>
+			    </TableRow>
+</TableLayout>

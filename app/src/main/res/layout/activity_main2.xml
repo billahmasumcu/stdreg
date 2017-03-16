@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+<!-- ***************************Class Selection Start**********************  -->
+	
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6" 
+        android:padding="10dip">
+		<Button
+            android:id="@+id/act2_btnHome"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+           	android:background="@null"
+		    android:drawableStart="@drawable/home"
+		    android:padding="0dip"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Class :" 
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/act2_class_sp"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:animateLayoutChanges="true"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Section :" 
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <Spinner
+            android:id="@+id/act2_section_sp"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:animateLayoutChanges="true"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/act2_showList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/show"
+            android:paddingLeft="0dp"
+            android:enabled="false"
+            android:background="@null"/>
+        
+    </LinearLayout>
+<!-- ***************************Class Selection end************************  -->    	 
+	<TableLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+		    <TableRow
+		        android:background="#CCC"
+		        android:paddingTop="1dp"
+		        android:paddingRight="1dp"
+		        android:weightSum="4">
+		        <TextView 
+		            android:layout_marginLeft="1dp"
+		            android:padding="5dp"
+		            android:background="#FFF"
+		            android:gravity="center"
+		            android:text="Name"
+		            android:layout_width="0dp"
+		            android:layout_weight="1.5"/>
+		        <TextView 
+		            android:layout_marginLeft="1dp"
+		            android:padding="5dp"
+		            android:background="#FFF"
+		            android:gravity="center"
+		            android:text="ID"
+		            android:layout_width="0dp"
+		            android:layout_weight="0.5"/>
+		        <TextView 
+		            android:layout_marginLeft="1dp"
+		            android:padding="5dp"
+		            android:background="#FFF"
+		            android:gravity="center"
+		            android:text="Email"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"/>
+		        <TextView 
+		            android:layout_marginLeft="1dp"
+		            android:padding="5dp"
+		            android:background="#FFF"
+		            android:gravity="center"
+		            android:text="Phone"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"/>
+    		</TableRow>
+	</TableLayout>
+	<ListView android:id="@+id/listView1" android:layout_width="fill_parent"
+  	android:layout_height="fill_parent" android:background="#00ffff"/>
+
+</LinearLayout>

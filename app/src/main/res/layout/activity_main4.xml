@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:weightSum="6">
+		<TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="" />		
+        <Button
+            android:id="@+id/act4_btnHome"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+           android:background="@null"
+		    android:drawableStart="@drawable/home"
+		    android:paddingLeft="50dip"
+		    android:paddingTop="5dip" 
+            android:layout_weight="2"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </LinearLayout>
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:weightSum="5">
+
+			<TextView
+				android:id="@+id/txtVclass"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="CLass : " 
+				android:paddingLeft="10dip"/>
+		    
+		    <EditText
+		        android:id="@+id/act4_class"
+		        android:layout_width="0dip"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:ems="10"
+		        android:inputType="numberSigned" />
+		
+			<TextView
+				android:id="@+id/txtVsection"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="Section : " 
+				android:paddingLeft="10dip"/>
+		
+		    <EditText
+		        android:id="@+id/act4_section"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:ems="10" />
+		    <Button
+			    android:id="@+id/class_regBTN"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:padding="10dip"
+			    android:layout_weight="1"
+			    android:drawableStart="@drawable/save"
+			    android:background="@null" />
+	</LinearLayout>
+	
+	<ListView android:id="@+id/listView2" android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:background="#00ffff"/>
+	
+	
+</LinearLayout>

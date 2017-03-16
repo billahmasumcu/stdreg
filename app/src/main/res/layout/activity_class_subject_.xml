@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ccffff"
+    android:orientation="vertical" 
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/class_sub_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/home"
+            android:background="@null" 
+            android:layout_weight="1"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Class :" 
+            android:textSize="18dp" 
+            android:textStyle="italic"
+            />
+
+        <Spinner
+            android:id="@+id/class_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:drawableStart="@drawable/abc_spinner_ab_default_holo_dark"
+            android:textSize="18dp" 
+	        android:textStyle="italic"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Code:" 
+            android:layout_weight="0.5"
+            android:textSize="18dp" 
+            android:textStyle="italic"/>
+
+        <EditText
+            android:id="@+id/class_sub_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" 
+            android:layout_weight="1"
+            android:textSize="18dp" 
+	        android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Subject name:" 
+            android:layout_weight="1.5"
+            android:textSize="18dp" 
+            android:textStyle="italic"/>
+        <EditText
+            android:id="@+id/class_sub_nm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" 
+            android:layout_weight="1"
+            android:textSize="18dp" 
+	        android:textStyle="italic"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+	        android:id="@+id/class_sub_save"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:drawableStart="@drawable/save"
+	        android:background="@null"
+	        android:paddingLeft="40dp"
+	        android:layout_weight="2"/>
+        
+    </LinearLayout>
+
+    <ListView android:id="@+id/listView_class_Sub_List" android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:background="#00ffff" />
+
+</LinearLayout>
