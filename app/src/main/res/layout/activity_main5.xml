@@ -28,7 +28,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Class :" />
+            android:text="Year:" />
 
         <Spinner
             android:id="@+id/act5_class_sp"
@@ -41,7 +41,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Section :" />
+            android:text="Semester:" />
 
         <Spinner
             android:id="@+id/act5_section_sp"
@@ -141,7 +141,7 @@
 	            android:id="@+id/textView6"
 	            android:layout_width="match_parent"
 	            android:layout_height="0dp"
-	            android:text="Absence" 
+	            android:text="Absent"
 	            android:layout_weight="1"/>
 
         	<TextView
