@@ -64,7 +64,7 @@
             android:layout_width="match_parent"
 		    android:layout_height="0dip"
 		    android:layout_weight="1"
-            android:orientation="horizontal" 
+            android:orientation="horizontal"
             android:weightSum="2"
             android:padding="15dp">
 		         <Button
@@ -72,7 +72,7 @@
 		            android:layout_width="0dip"
 		            android:layout_height="match_parent"
 		            android:layout_weight="1"
-		            android:drawableStart="@drawable/class_m"  
+		            android:drawableStart="@drawable/class_m"
 		            android:background="@null"
 		            android:paddingLeft="45dp"/>
 
@@ -80,8 +80,8 @@
 		             android:id="@+id/subList"
 		             android:layout_width="0dp"
 		             android:layout_height="wrap_content"
-		             android:layout_weight="1"
-		             android:drawableStart="@drawable/b_list" 
+		             android:layout_weight="0.61"
+		             android:drawableStart="@drawable/b_list"
 		             android:background="@null"
 		             android:paddingLeft="45dp"/>
 
@@ -93,15 +93,8 @@
             android:orientation="horizontal" 
             android:weightSum="2"
             android:padding="12dp">
-		        <Button
-		            android:id="@+id/exit"
-		            android:layout_width="0dp"
-		            android:layout_height="wrap_content"
-		            android:layout_weight="1"
-		            android:drawableStart="@drawable/out" 
-		            android:paddingLeft="45dp"
-		            android:background="@null"/>
-		        <Button
+
+			<Button
 		            android:id="@+id/stdattbyid"
 		            android:layout_width="0dp"
 		            android:layout_height="wrap_content"

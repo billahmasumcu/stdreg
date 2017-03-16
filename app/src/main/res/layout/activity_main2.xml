@@ -19,13 +19,14 @@
 		    android:drawableStart="@drawable/home"
 		    android:padding="0dip"
             android:layout_weight="1"/>
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Class :" 
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	  <TextView
+		  android:id="@+id/textView1"
+		  android:layout_width="0dp"
+		  android:layout_height="wrap_content"
+		  android:layout_weight="1"
+		  android:text="Year"
+		  android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <Spinner
             android:id="@+id/act2_class_sp"
@@ -35,15 +36,15 @@
             android:animateLayoutChanges="true"
             android:gravity="center"
             android:textAppearance="?android:attr/textAppearanceLarge" />
-        
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Section :" 
-            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+	  <TextView
+		  android:id="@+id/textView2"
+		  android:layout_width="0dp"
+		  android:layout_height="wrap_content"
+		  android:layout_weight="1"
+		  android:text="Semester"
+		  android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <Spinner
             android:id="@+id/act2_section_sp"
@@ -98,14 +99,14 @@
 		            android:text="Email"
 		            android:layout_width="0dp"
 		            android:layout_weight="1"/>
-		        <TextView 
-		            android:layout_marginLeft="1dp"
-		            android:padding="5dp"
-		            android:background="#FFF"
-		            android:gravity="center"
-		            android:text="Phone"
-		            android:layout_width="0dp"
-		            android:layout_weight="1"/>
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_marginLeft="1dp"
+					android:layout_weight="1"
+					android:background="#FFF"
+					android:gravity="center"
+					android:padding="5dp" />
     		</TableRow>
 	</TableLayout>
 	<ListView android:id="@+id/listView1" android:layout_width="fill_parent"

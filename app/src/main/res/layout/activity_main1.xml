@@ -68,28 +68,29 @@
         android:orientation="horizontal"
         android:weightSum="4"
         android:padding="10dp">
-			<TextView
-	            android:id="@+id/textView2"
-	            android:layout_width="0dip"
-	            android:layout_height="wrap_content"
-	            android:text="Class :" 
-	            android:layout_weight="1"
-	            android:gravity="center"
-	            android:textSize="18dp"/>
+
+		<TextView
+			android:id="@+id/textView2"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="year"
+			android:textSize="18dp" />
 			<Spinner
 			    android:id="@+id/spi_class"
 			    android:layout_width="0dip"
 			    android:layout_height="wrap_content"
 			    android:layout_weight="1"/>
-			
-			<TextView
-	            android:id="@+id/textView3"
-	            android:layout_width="0dip"
-	            android:layout_height="wrap_content"
-	            android:text="Section :" 
-	            android:layout_weight="1"
-	            android:gravity="center"
-	            android:textSize="18dp"/>
+
+		<TextView
+			android:id="@+id/textView3"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="Semester"
+			android:textSize="18dp" />
 			<Spinner
 			    android:id="@+id/spi_section"
 			    android:layout_width="0dip"

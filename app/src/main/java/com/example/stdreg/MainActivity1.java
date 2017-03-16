@@ -124,11 +124,11 @@ public class MainActivity1 extends Activity {
 						if(RES==0){
 							Toast.makeText(MainActivity1.this, "sorry", Toast.LENGTH_LONG).show();
 						}if(RES==1){
-							g.setError("This mail Address alridy used.");
+							g.setError("This mail Address already used.");
 						}if(RES==2){
-							f.setError("This Phone number alridy used.");
+							f.setError("This Phone number already used.");
 						}if(RES==3){
-							Toast.makeText(MainActivity1.this, "Please restart Syatem", Toast.LENGTH_LONG).show();
+							Toast.makeText(MainActivity1.this, "Please restart System", Toast.LENGTH_LONG).show();
 						}
 						
 						
