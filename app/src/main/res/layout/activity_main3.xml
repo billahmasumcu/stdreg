@@ -28,7 +28,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".6"
-            android:text="Class :" />
+            android:text="Year:" />
 
         <Spinner
             android:id="@+id/act3_class_sp"
@@ -41,7 +41,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Section :" />
+            android:text="Semester :" />
 
         <Spinner
             android:id="@+id/act3_section_sp"
