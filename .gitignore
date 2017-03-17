@@ -1,0 +1,16 @@
+.DS_Store
+.gradle/
+.idea/
+StdReg.iml
+app/app.iml
+app/build.gradle
+app/build/
+b_list.png
+build.gradle
+build/
+gradle/
+gradlew
+gradlew.bat
+import-summary.txt
+local.properties
+settings.gradle
