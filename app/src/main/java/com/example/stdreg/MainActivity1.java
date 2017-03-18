@@ -123,6 +123,9 @@ public class MainActivity1 extends Activity {
                         s1.setSelection(0);
                         s2.setSelection(0);
                         g.setText("");
+                        studentIDField.setText("");
+
+
                     } else {
                         if (RES == 0) {
                             Toast.makeText(MainActivity1.this, "Some error occurred!", Toast.LENGTH_LONG).show();

@@ -58,9 +58,9 @@ public class MainActivity4 extends Activity {
 				String mygetclass;
 				if(getclass.isEmpty() || getclass.length()>2 || getsec.isEmpty()){
 					if(getclass.isEmpty() || getclass.length()>2 || getclass.matches("[0-9]+")){
-						a.setError("Invalid class.");
+						a.setError("Invalid year.");
 					}if(getsec.isEmpty() || getsec.matches("[a-zA-Z0-9]+")){
-						b.setError("Invalid section.");
+						b.setError("Invalid semester.");
 					}
 				}else{
 					if(getclass.length()<2){
@@ -70,11 +70,11 @@ public class MainActivity4 extends Activity {
 					}
 					int RES = dbHelper.classInsart(mygetclass, getsec);
 					if(RES==1){
-						Toast.makeText(MainActivity4.this, "new Class & Section successfully Inserted", Toast.LENGTH_LONG).show();
+						Toast.makeText(MainActivity4.this, "New year and semester successfully Inserted", Toast.LENGTH_LONG).show();
 					}else if(RES==0){
 						Toast.makeText(MainActivity4.this, "Please try again.", Toast.LENGTH_LONG).show();
 					}else{
-						Toast.makeText(MainActivity4.this, "This class and section already exist", Toast.LENGTH_LONG).show();
+						Toast.makeText(MainActivity4.this, "This Year and semester already exists", Toast.LENGTH_LONG).show();
 					}
 					//dataAdapter.notifyDataSetChanged();
 					a.setText("");
