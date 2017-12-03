@@ -1,0 +1,2 @@
+# stdreg
+its android project
